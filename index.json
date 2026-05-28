@@ -1,0 +1,14 @@
+{
+  "$schema": "./schema/index.schema.json",
+  "version": "1",
+  "themes": {
+    "monocle-brochure": {
+      "url": "https://warmblood-kr.github.io/wb-slide-registry/themes/monocle-brochure/theme.json",
+      "version": "0.1.0",
+      "description": "Brochure-style theme for Warmblood/Monocle decks",
+      "author": "Warmblood",
+      "official": true
+    }
+  },
+  "layouts": {}
+}
