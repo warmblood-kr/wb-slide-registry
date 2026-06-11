@@ -54,7 +54,9 @@ slide-brochure-feature {
   overflow: hidden;
   min-height: 0;
   margin-top: 30px;
-  padding: 0 120px;
+  /* keep a bottom gap so a full-bleed screenshot clears the footer chrome
+     (logo + page number sit at bottom:24px) instead of being clipped over it */
+  padding: 0 120px 28px;
 }
 
 .br-feature-content img {
@@ -125,6 +127,36 @@ slide-brochure-feature {
 .ms-cover-layout .screenshot-frame {
   max-width: 500px;
   max-height: 320px;
+}
+
+/* Plain-markdown cover (`# Title` + a subtitle paragraph): give it brand
+   punch without requiring special markup — large navy title, an accent
+   underline bar, and a muted subtitle. */
+.ms-cover-layout h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--color-navy-dark);
+  margin: 0;
+  text-align: center;
+}
+.ms-cover-layout h1::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 5px;
+  background: var(--color-accent);
+  border-radius: 3px;
+  margin: 1.1rem auto 0;
+}
+.ms-cover-layout h1 + p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin: 1.25rem 0 0;
+  max-width: 720px;
 }
 
 /* Section divider (large centered accent text) */

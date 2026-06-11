@@ -1,6 +1,6 @@
 {
   "name": "monocle-brochure",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Brochure-style theme used by Warmblood/Monocle decks. Pretendard font, orange accent, bottom-extending content area.",
   "author": "Warmblood",
   "license": "MIT",
